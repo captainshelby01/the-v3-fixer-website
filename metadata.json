@@ -1,0 +1,6 @@
+{
+  "name": "The V3 Fixer",
+  "description": "Communication training and bookstore catalog website for Winfrey Agbelese (The V3 Fixer) built in standard HTML5, Tailwind CSS, and vanilla JavaScript.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
