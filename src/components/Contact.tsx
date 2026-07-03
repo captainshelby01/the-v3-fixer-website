@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Mail, Phone, MapPin, Send, CheckCircle, Hourglass, Calendar } from "lucide-react";
+import { Mail, Phone, MapPin, Send, CheckCircle, Hourglass } from "lucide-react";
 import { CONFIG } from "../config";
 
 export default function Contact() {
@@ -96,25 +96,6 @@ Message: ${formData.message}`;
                     className="font-semibold text-forest-950 hover:text-forest-800 transition-colors"
                   >
                     {CONFIG.email}
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex items-center space-x-4">
-                <div className="p-3 bg-white border border-nude-200 rounded-xl text-gold-600">
-                  <Calendar className="w-5 h-5" />
-                </div>
-                <div>
-                  <span className="block text-[10px] uppercase font-bold tracking-widest text-nude-400 font-mono">
-                    Book Discovery Call
-                  </span>
-                  <a
-                    href="https://calendly.com/thev3fixer"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-semibold text-forest-950 hover:text-forest-800 transition-colors"
-                  >
-                    calendly.com/thev3fixer
                   </a>
                 </div>
               </div>

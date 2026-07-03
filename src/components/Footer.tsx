@@ -174,18 +174,49 @@ export default function Footer() {
         </div>
 
         {/* Bottom copyright and top arrow */}
-        <div className="pt-10 flex flex-col sm:flex-row items-center justify-between gap-6">
-          <p className="text-xs text-nude-400/85 font-sans font-light text-center sm:text-left">
-            © {new Date().getFullYear()} Winfrey Agbelese (The V3 Fixer). All Rights Reserved. Fully tailored with executive discretion.
-          </p>
+        <div className="pt-10 border-t border-forest-900/40 flex flex-col items-center justify-center relative">
+          {/* Scroll to top button - positioned absolute on the right for desktop */}
+          <div className="absolute right-0 top-10 hidden sm:block">
+            <button
+              onClick={handleScrollToTop}
+              className="p-3 bg-forest-900 hover:bg-forest-800 text-gold-300 rounded-xl border border-forest-800 shadow-md transition-all focus:outline-none cursor-pointer"
+              aria-label="Scroll to Top"
+            >
+              <ArrowUp className="w-4 h-4" />
+            </button>
+          </div>
 
-          <button
-            onClick={handleScrollToTop}
-            className="p-3 bg-forest-900 hover:bg-forest-800 text-gold-300 rounded-xl border border-forest-800 shadow-md transition-all focus:outline-none cursor-pointer"
-            aria-label="Scroll to Top"
-          >
-            <ArrowUp className="w-4 h-4" />
-          </button>
+          {/* Centered Credits Container */}
+          <div className="text-center space-y-4 max-w-md mx-auto">
+            <p className="text-xs sm:text-sm text-nude-300/80 font-sans font-light tracking-wide">
+              © {new Date().getFullYear()} Winfrey Agbelese (The V3 Fixer). All rights reserved.
+            </p>
+
+            {/* CRAFTED WITH PRECISION separator */}
+            <div className="flex items-center justify-center space-x-4">
+              <div className="h-px bg-nude-800 w-12 sm:w-20" />
+              <span className="text-[9px] sm:text-[10px] font-mono tracking-widest text-nude-400/90 uppercase font-bold">
+                Crafted with Precision
+              </span>
+              <div className="h-px bg-nude-800 w-12 sm:w-20" />
+            </div>
+
+            {/* Website by ImpactDev */}
+            <p className="text-xs sm:text-sm text-nude-300/70 font-sans font-light">
+              Website by <span className="font-sans font-medium text-nude-100">Impact</span><span className="font-serif italic font-extrabold text-white tracking-wide">Dev</span>
+            </p>
+          </div>
+
+          {/* Scroll to top button for mobile */}
+          <div className="mt-6 sm:hidden">
+            <button
+              onClick={handleScrollToTop}
+              className="p-3 bg-forest-900 hover:bg-forest-800 text-gold-300 rounded-xl border border-forest-800 shadow-md transition-all focus:outline-none cursor-pointer"
+              aria-label="Scroll to Top"
+            >
+              <ArrowUp className="w-4 h-4" />
+            </button>
+          </div>
         </div>
       </div>
     </footer>
