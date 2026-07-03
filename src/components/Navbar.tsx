@@ -25,7 +25,6 @@ export default function Navbar({ activeSection }: NavbarProps) {
     { label: "The V3 Method", id: "v3method" },
     { label: "Services", id: "services" },
     { label: "Bookstore", id: "books" },
-    { label: "FAQs", id: "faq" },
     { label: "Contact", id: "contact" },
   ];
 
@@ -105,11 +104,11 @@ export default function Navbar({ activeSection }: NavbarProps) {
           {/* Action Button */}
           <div className="hidden lg:block">
             <button
-              onClick={() => handleScrollTo("contact")}
-              className="inline-flex items-center space-x-2 bg-forest-900 hover:bg-forest-800 text-nude-50 px-5 py-2.5 rounded-xl text-xs font-semibold uppercase tracking-wider transition-all shadow-sm hover:shadow-md cursor-pointer"
+              onClick={() => handleScrollTo("v3quiz")}
+              className="inline-flex items-center space-x-2 bg-gold-500 hover:bg-gold-600 text-forest-950 px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider transition-all shadow-sm hover:shadow-md cursor-pointer hover:-translate-y-0.5"
             >
-              <span>Book Assessment</span>
-              <ArrowRight className="w-3.5 h-3.5" />
+              <span>Audit Your Voice</span>
+              <ArrowRight className="w-3.5 h-3.5 text-forest-950" />
             </button>
           </div>
 

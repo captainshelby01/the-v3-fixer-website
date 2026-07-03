@@ -11,6 +11,7 @@ import Services from "./components/Services";
 import Shop from "./components/Shop";
 import Gallery from "./components/Gallery";
 import Testimonials from "./components/Testimonials";
+import DiagnosticQuiz from "./components/DiagnosticQuiz";
 import FAQs from "./components/FAQs";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -30,7 +31,7 @@ export default function App() {
 
   useEffect(() => {
     // Modern IntersectionObserver ScrollSpy
-    const sections = ["home", "about", "v3method", "services", "books", "faq", "contact"];
+    const sections = ["home", "about", "v3method", "services", "books", "contact"];
     const observerOptions = {
       root: null,
       rootMargin: "-25% 0px -55% 0px", // focus on the middle-upper part of the viewport
@@ -91,6 +92,9 @@ export default function App() {
 
           {/* Client Reviews */}
           <Testimonials />
+
+          {/* V3 Speech & Presence Assessment */}
+          <DiagnosticQuiz />
 
           {/* Questions resolved */}
           <FAQs />

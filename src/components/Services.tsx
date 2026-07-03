@@ -168,13 +168,23 @@ export default function Services() {
                       Book Winfrey for your team or personal curriculum.
                     </p>
                   </div>
-                  <button
-                    onClick={() => handleWhatsAppBooking(selectedService)}
-                    className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-forest-900 hover:bg-forest-800 text-nude-50 px-6 py-3.5 rounded-xl text-xs font-bold uppercase tracking-wider shadow-md hover:shadow-lg transition-all cursor-pointer"
-                  >
-                    <MessageSquare className="w-4 h-4 text-gold-300" />
-                    <span>Book Service via WhatsApp</span>
-                  </button>
+                    <div className="flex flex-col sm:flex-row gap-2.5 w-full sm:w-auto">
+                      <a
+                        href="https://calendly.com/thev3fixer"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center justify-center space-x-2 bg-white hover:bg-nude-50 text-forest-950 border border-nude-300 px-5 py-3.5 rounded-xl text-xs font-bold uppercase tracking-wider transition-all"
+                      >
+                        <span>Schedule Call</span>
+                      </a>
+                      <button
+                        onClick={() => handleWhatsAppBooking(selectedService)}
+                        className="inline-flex items-center justify-center space-x-2 bg-forest-900 hover:bg-forest-800 text-nude-50 px-5 py-3.5 rounded-xl text-xs font-bold uppercase tracking-wider shadow-md hover:shadow-lg transition-all cursor-pointer"
+                      >
+                        <MessageSquare className="w-4 h-4 text-gold-300" />
+                        <span>Book via WhatsApp</span>
+                      </button>
+                    </div>
                 </div>
               </div>
             </motion.div>

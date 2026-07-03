@@ -3,11 +3,36 @@ import { BOOKS } from "../data";
 import { Book } from "../types";
 import { CONFIG } from "../config";
 import { motion, AnimatePresence } from "motion/react";
-import { CreditCard, MessageSquare, Check, Sparkles, X, Info } from "lucide-react";
+import { CreditCard, MessageSquare, Check, Sparkles, X, Info, BookOpen } from "lucide-react";
+
+const BOOK_SAMPLES: Record<string, { title: string; subtitle: string; day: string; lesson: string; exercise: string }> = {
+  "verbal-devotional": {
+    title: "The V3 Devotional: Verbal Communication",
+    subtitle: "Pillar: Verbal — The Substance",
+    day: "Day 5: The Framework Filter",
+    lesson: "Most speakers use filler words ('basically', 'um', 'like', 'you know') because their brain is searching for the next word while their mouth remains open. Silence is the ultimate luxury of speech. When you need to think, close your mouth, swallow, and breathe. Let the silence do the work. A structured pause makes you sound thoughtful and authoritative, whereas filler words dilute your intelligence.",
+    exercise: "Practice the 3-Second Rule: Have a colleague ask you a question. Wait exactly 3 seconds in complete silence before speaking. Answer using the 'PREP' framework: State your Point (1 sentence), give your Reason (1 sentence), provide an Example (1-2 sentences), and restate your Point (1 sentence). Purge all fillers."
+  },
+  "vocal-devotional": {
+    title: "The V3 Devotional: Vocal Communication",
+    subtitle: "Pillar: Vocal — The Instrument",
+    day: "Day 9: Finding Your Vocal Anchor",
+    lesson: "Your voice projects authority when it resonates from your chest cavity rather than your throat. Speaking from the throat sounds thin, high-pitched, and tense under stress. To find your chest resonance, place your hand flat on your chest, hum a low 'mmm' note, and speak. Direct the sound vibrations downward. This deeper pitch projects calm control, holding the room's attention effortlessly.",
+    exercise: "Chest Humming: Hum at your lowest comfortable pitch for 2 minutes every morning before starting your calls. Speak 5 sentences immediately after, focusing on directing the sound from your diaphragm. Keep your hand on your chest to verify the resonance."
+  },
+  "visual-devotional": {
+    title: "The V3 Devotional: Visual Communication",
+    subtitle: "Pillar: Visual — The Presence",
+    day: "Day 14: Non-Verbal Congruence",
+    lesson: "A common visual bottleneck is 'hand fluttering'—making small, rapid, repetitive nervous gestures that distract from your message. Command is still. Your physical gestures must be deliberate and congruent. If you say 'we have three options', hold up three fingers clearly, then return to a neutral base. Mark space with your hands.",
+    exercise: "Gesture Mapping: Record yourself explaining a topic for 2 minutes. Watch it on mute. Count how many times you made repetitive, nervous gestures. Re-record, keeping your hands at your sides or resting on the table for 80% of the duration."
+  }
+};
 
 export default function Shop() {
   const [activeFilter, setActiveFilter] = useState<"All" | "Individual" | "Bundle">("All");
   const [selectedBookForPaystack, setSelectedBookForPaystack] = useState<Book | null>(null);
+  const [previewBookId, setPreviewBookId] = useState<string | null>(null);
 
   const formatNaira = (amount: number) => {
     return "₦" + amount.toLocaleString("en-NG");
@@ -167,16 +192,27 @@ export default function Shop() {
                     </div>
 
                     {/* Pricing */}
-                    <div className="flex items-baseline space-x-3.5 pt-2">
-                      <span className="text-2xl sm:text-3xl font-extrabold text-forest-900 font-serif">
-                        {formatNaira(book.preorderPrice)}
-                      </span>
-                      <span className="text-sm text-nude-400 line-through font-light font-sans">
-                        {formatNaira(book.normalPrice)}
-                      </span>
-                      <span className="text-[10px] font-bold uppercase tracking-wider bg-gold-500/10 text-gold-700 px-2 py-0.5 rounded-full font-sans">
-                        Pre-Order Special
-                      </span>
+                    <div className="flex items-center justify-between pt-2">
+                      <div className="flex items-baseline space-x-3.5">
+                        <span className="text-2xl sm:text-3xl font-extrabold text-forest-900 font-serif">
+                          {formatNaira(book.preorderPrice)}
+                        </span>
+                        <span className="text-sm text-nude-400 line-through font-light font-sans">
+                          {formatNaira(book.normalPrice)}
+                        </span>
+                        <span className="text-[10px] font-bold uppercase tracking-wider bg-gold-500/10 text-gold-700 px-2 py-0.5 rounded-full font-sans">
+                          Pre-Order Special
+                        </span>
+                      </div>
+                      {book.pillar !== "Bundle" && (
+                        <button
+                          onClick={() => setPreviewBookId(book.id)}
+                          className="text-xs font-semibold text-forest-900 hover:text-gold-600 flex items-center space-x-1.5 cursor-pointer focus:outline-none bg-nude-100/50 hover:bg-nude-100 px-3 py-1.5 rounded-xl border border-nude-200/40 transition-colors"
+                        >
+                          <BookOpen className="w-3.5 h-3.5 text-forest-800" />
+                          <span>Sample Day</span>
+                        </button>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -202,6 +238,51 @@ export default function Shop() {
               </motion.div>
             );
           })}
+        </div>
+
+        {/* V3 Learning Community Banner */}
+        <div className="max-w-5xl mx-auto mt-16 bg-gradient-to-br from-forest-900 via-forest-950 to-forest-900 rounded-[2.5rem] p-8 sm:p-12 border border-gold-600/30 text-nude-50 relative overflow-hidden shadow-xl text-left">
+          {/* Decorative ambient elements */}
+          <div className="absolute top-0 right-0 w-96 h-96 bg-gold-400/10 rounded-full blur-3xl pointer-events-none" />
+          
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+            <div className="lg:col-span-8 space-y-4">
+              <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-gold-300 bg-white/10 px-3 py-1 rounded-full inline-block">
+                Exclusive Learning Circle
+              </span>
+              <h3 className="font-serif text-2xl sm:text-3xl font-extrabold text-white leading-tight">
+                Join The V3 Learning Community
+              </h3>
+              <p className="text-nude-200 text-sm font-sans font-light leading-relaxed max-w-2xl">
+                Ready to go beyond the books? Join an elite circle of executives, professionals, and entrepreneurs committed to continuous communication supremacy. Get weekly speaking audits, custom frameworks templates, monthly mastermind reviews, and peer-to-peer feedback.
+              </p>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-2 text-xs text-nude-300 font-sans">
+                <div className="flex items-center space-x-2">
+                  <Check className="w-4 h-4 text-gold-300" />
+                  <span>Weekly Audio Tips</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Check className="w-4 h-4 text-gold-300" />
+                  <span>Peer Masterminds</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Check className="w-4 h-4 text-gold-300" />
+                  <span>Monthly Live Audits</span>
+                </div>
+              </div>
+            </div>
+            <div className="lg:col-span-4 flex justify-start lg:justify-end">
+              <a
+                href={`https://wa.me/${CONFIG.whatsappCleanNumber}?text=${encodeURIComponent("Hi Winfrey! I would like to join the V3 Learning Community. Please share details on how to register.")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto inline-flex items-center justify-center space-x-2.5 bg-gold-500 hover:bg-gold-400 text-forest-950 px-8 py-4 rounded-xl text-xs font-bold uppercase tracking-wider transition-all duration-300 shadow-md hover:-translate-y-0.5"
+              >
+                <MessageSquare className="w-4 h-4 text-forest-950" />
+                <span>Join waitlist via WhatsApp</span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -299,6 +380,97 @@ export default function Shop() {
           </div>
         )}
       </AnimatePresence>
-    </section>
+        {/* Devotional Sample Preview Modal Overlay */}
+        {previewBookId && BOOK_SAMPLES[previewBookId] && (
+          <div className="fixed inset-0 z-55 flex items-center justify-center p-4">
+            {/* Backdrop */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setPreviewBookId(null)}
+              className="absolute inset-0 bg-forest-950/60 backdrop-blur-md"
+            />
+
+            {/* Modal Box */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95, y: 15 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: 15 }}
+              transition={{ duration: 0.25 }}
+              className="relative w-full max-w-2xl bg-white rounded-[2rem] shadow-2xl p-6 sm:p-8 border border-nude-200 overflow-hidden max-h-[90vh] overflow-y-auto"
+            >
+              {/* Close Button */}
+              <button
+                onClick={() => setPreviewBookId(null)}
+                className="absolute top-6 right-6 p-2 rounded-xl text-nude-500 hover:text-forest-950 hover:bg-nude-100 transition-colors focus:outline-none cursor-pointer"
+                aria-label="Close preview modal"
+              >
+                <X className="w-5 h-5" />
+              </button>
+
+              {/* Devotional Book Page Layout */}
+              <div className="space-y-6 pt-2 text-left">
+                <div className="space-y-1.5 border-b border-nude-200 pb-4">
+                  <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-gold-600">
+                    {BOOK_SAMPLES[previewBookId].subtitle}
+                  </span>
+                  <h4 className="font-serif text-xl sm:text-2xl font-bold text-forest-950 leading-tight">
+                    {BOOK_SAMPLES[previewBookId].day}
+                  </h4>
+                </div>
+
+                {/* Page Content */}
+                <div className="space-y-5">
+                  <div className="space-y-2">
+                    <span className="block text-xs font-mono font-bold uppercase tracking-wider text-nude-400">
+                      The Daily Lesson:
+                    </span>
+                    <p className="text-nude-800 text-sm sm:text-base leading-relaxed font-sans font-light bg-nude-50/50 p-5 rounded-2xl border border-nude-100">
+                      {BOOK_SAMPLES[previewBookId].lesson}
+                    </p>
+                  </div>
+
+                  <div className="space-y-2">
+                    <span className="block text-xs font-mono font-bold uppercase tracking-wider text-nude-400">
+                      V3 Daily Action Drill:
+                    </span>
+                    <div className="bg-forest-950 text-nude-50 p-5 rounded-2xl border border-forest-900 shadow-inner space-y-2">
+                      <div className="flex items-center space-x-2 text-gold-300">
+                        <Sparkles className="w-4 h-4" />
+                        <span className="font-mono text-xs font-bold uppercase tracking-wider">Commit to Practice</span>
+                      </div>
+                      <p className="text-xs sm:text-sm text-nude-200 leading-relaxed font-sans font-light">
+                        {BOOK_SAMPLES[previewBookId].exercise}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Footer CTA */}
+                <div className="pt-6 border-t border-nude-200 flex flex-col sm:flex-row items-center justify-between gap-4">
+                  <div className="text-left">
+                    <h5 className="text-xs font-bold text-forest-900">Enjoyed this daily preview?</h5>
+                    <p className="text-[11px] text-nude-500">Pre-order the full 31-day devotional to complete your transformation.</p>
+                  </div>
+                  <button
+                    onClick={() => {
+                      const book = BOOKS.find(b => b.id === previewBookId);
+                      if (book) {
+                        setPreviewBookId(null);
+                        handleWhatsAppOrder(book);
+                      }
+                    }}
+                    className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-forest-900 hover:bg-forest-800 text-nude-50 px-5 py-3 rounded-xl text-xs font-bold uppercase tracking-wider transition-all"
+                  >
+                    <MessageSquare className="w-4 h-4 text-gold-300" />
+                    <span>Pre-Order on WhatsApp</span>
+                  </button>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        )}
+      </section>
   );
 }
