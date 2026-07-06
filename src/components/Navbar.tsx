@@ -5,9 +5,10 @@ import { CONFIG } from "../config";
 
 interface NavbarProps {
   activeSection: string;
+  setActiveSection: (id: string) => void;
 }
 
-export default function Navbar({ activeSection }: NavbarProps) {
+export default function Navbar({ activeSection, setActiveSection }: NavbarProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -29,6 +30,7 @@ export default function Navbar({ activeSection }: NavbarProps) {
   ];
 
   const handleScrollTo = (id: string) => {
+    setActiveSection(id);
     const performScroll = () => {
       const element = document.getElementById(id);
       if (element) {

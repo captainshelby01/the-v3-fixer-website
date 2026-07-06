@@ -34,8 +34,8 @@ export default function App() {
     const sections = ["home", "about", "v3method", "services", "books", "contact"];
     const observerOptions = {
       root: null,
-      rootMargin: "-25% 0px -55% 0px", // focus on the middle-upper part of the viewport
-      threshold: 0.1,
+      rootMargin: "-80px 0px -80% 0px", // focus strictly on the section right below the navbar
+      threshold: 0,
     };
 
     const observerCallback = (entries: IntersectionObserverEntry[]) => {
@@ -68,7 +68,7 @@ export default function App() {
     <div className="min-h-screen bg-nude-50 text-nude-950 selection:bg-gold-500/30 selection:text-forest-950 antialiased font-sans flex flex-col justify-between">
       <div>
         {/* Navigation */}
-        <Navbar activeSection={activeSection} />
+        <Navbar activeSection={activeSection} setActiveSection={setActiveSection} />
 
         {/* Content sections */}
         <main>
