@@ -112,10 +112,10 @@ export const BOOKS: Book[] = [
   {
     id: "verbal-devotional",
     title: "The V3 Devotional: Verbal Communication",
-    subtitle: "31 Days of Cognitive & Structural Speech Mastery",
+    subtitle: "30 Days of Cognitive & Structural Speech Mastery",
     description: "Your daily guide to mastering speech architecture. Purge filler words, structure complex arguments in seconds, and learn to package your intellect into clear, powerful statements.",
     highlights: [
-      "31 daily exercises to expand active vocabulary",
+      "30 daily exercises to expand active vocabulary",
       "The 'Pyramid Principle' application for business reports",
       "5 frameworks to eliminate filler words (um, like, basically)",
       "Daily practice logs and conversational prompts"
@@ -129,10 +129,10 @@ export const BOOKS: Book[] = [
   {
     id: "vocal-devotional",
     title: "The V3 Devotional: Vocal Communication",
-    subtitle: "31 Days to Build a Resonant, Authoritative Speaking Voice",
+    subtitle: "30 Days to Build a Resonant, Authoritative Speaking Voice",
     description: "The complete manual for the acoustics of speech. Cultivate diaphragmatic breathing, find your optimal vocal pitch, and use strategic pauses to command respect.",
     highlights: [
-      "31 daily vocal acoustics drills and exercises",
+      "30 daily vocal acoustics drills and exercises",
       "Diaphragmatic breath control coaching for stamina",
       "Pacing guides and tone styling for executive presence",
       "Vocal hygiene advice to avoid hoarseness or strain"
@@ -146,10 +146,10 @@ export const BOOKS: Book[] = [
   {
     id: "visual-devotional",
     title: "The V3 Devotional: Visual Communication",
-    subtitle: "31 Days to Style Your Posture & Stage Presence",
+    subtitle: "30 Days to Style Your Posture & Stage Presence",
     description: "Master the silent signals of communication. Align your body language, optimize your zoom setup, and curate a professional wardrobe that speaks before you do.",
     highlights: [
-      "31 daily challenges for dynamic posture and gestures",
+      "30 daily challenges for dynamic posture and gestures",
       "Camera framing, lighting, and visual backgrounds for virtual meetings",
       "Micro-expressions control and authentic smile anchoring",
       "Wardrobe, color, and fit principles for professional impact"
@@ -164,7 +164,7 @@ export const BOOKS: Book[] = [
     id: "v3-bundle",
     title: "The Ultimate V3 Trilogy Bundle",
     subtitle: "The Complete Verbal, Vocal, and Visual System",
-    description: "Get all three volumes of the V3 Devotional Series at an exclusive pre-order discount rate. Your 93-day comprehensive path to absolute communication supremacy.",
+    description: "Get all three volumes of the V3 Devotional Series at an exclusive pre-order discount rate. Your 90-day comprehensive path to absolute communication supremacy.",
     highlights: [
       "All 3 complete volumes (Verbal, Vocal, and Visual)",
       "Exclusive access to the V3 Video Companion Library",

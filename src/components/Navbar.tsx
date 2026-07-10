@@ -25,6 +25,7 @@ export default function Navbar({ activeSection, setActiveSection }: NavbarProps)
     { label: "About Winfrey", id: "about" },
     { label: "The V3 Method", id: "v3method" },
     { label: "Services", id: "services" },
+    { label: "Ecosystem", id: "ecosystem" },
     { label: "Bookstore", id: "books" },
     { label: "Contact", id: "contact" },
   ];
@@ -71,7 +72,7 @@ export default function Navbar({ activeSection, setActiveSection }: NavbarProps)
             <span className="font-serif text-xl sm:text-2xl font-extrabold tracking-tight text-forest-950 group-hover:text-forest-800 transition-colors">
               WINFREY AGBELESE
             </span>
-            <span className="text-[10px] sm:text-[11px] font-mono tracking-widest text-gold-600 font-bold uppercase">
+            <span className="text-[10px] sm:text-[11px] font-mono tracking-widest text-forest-600 font-bold uppercase">
               THE V3 FIXER
             </span>
           </button>
@@ -94,7 +95,7 @@ export default function Navbar({ activeSection, setActiveSection }: NavbarProps)
                   {isActive && (
                     <motion.div
                       layoutId="activeIndicator"
-                      className="absolute bottom-0 left-3 right-3 h-0.5 bg-gold-500 rounded-full"
+                      className="absolute bottom-0 left-3 right-3 h-0.5 bg-forest-600 rounded-full"
                       transition={{ type: "spring", stiffness: 380, damping: 30 }}
                     />
                   )}
@@ -107,10 +108,10 @@ export default function Navbar({ activeSection, setActiveSection }: NavbarProps)
           <div className="hidden lg:block">
             <button
               onClick={() => handleScrollTo("v3quiz")}
-              className="inline-flex items-center space-x-2 bg-gold-500 hover:bg-gold-600 text-forest-950 px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider transition-all shadow-sm hover:shadow-md cursor-pointer hover:-translate-y-0.5"
+              className="inline-flex items-center space-x-2 bg-forest-900 hover:bg-forest-800 text-nude-50 px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider transition-all shadow-sm hover:shadow-md cursor-pointer hover:-translate-y-0.5"
             >
               <span>Audit Your Voice</span>
-              <ArrowRight className="w-3.5 h-3.5 text-forest-950" />
+              <ArrowRight className="w-3.5 h-3.5 text-gold-300" />
             </button>
           </div>
 

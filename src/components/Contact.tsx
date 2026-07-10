@@ -120,7 +120,7 @@ Message: ${formData.message}`;
               {success ? (
                 // Success State Card
                 <div className="space-y-4 text-center py-6">
-                  <div className="w-16 h-16 bg-emerald-50 text-emerald-600 border border-emerald-100 rounded-full flex items-center justify-center mx-auto shadow-sm">
+                  <div className="w-16 h-16 bg-forest-50 text-forest-600 border border-forest-100 rounded-full flex items-center justify-center mx-auto shadow-sm">
                     <CheckCircle className="w-8 h-8" />
                   </div>
                   <h3 className="font-serif text-2xl font-bold text-forest-950 leading-tight">

@@ -8,6 +8,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import V3Method from "./components/V3Method";
 import Services from "./components/Services";
+import Ecosystem from "./components/Ecosystem";
 import Shop from "./components/Shop";
 import Gallery from "./components/Gallery";
 import Testimonials from "./components/Testimonials";
@@ -31,7 +32,7 @@ export default function App() {
 
   useEffect(() => {
     // Modern IntersectionObserver ScrollSpy
-    const sections = ["home", "about", "v3method", "services", "books", "contact"];
+    const sections = ["home", "about", "v3method", "services", "ecosystem", "books", "contact"];
     const observerOptions = {
       root: null,
       rootMargin: "-80px 0px -80% 0px", // focus strictly on the section right below the navbar
@@ -83,6 +84,9 @@ export default function App() {
 
           {/* Services offered */}
           <Services />
+
+          {/* V3 Ecosystem & Flagship Projects */}
+          <Ecosystem />
 
           {/* Pre-order Trilogy bookstore */}
           <Shop />

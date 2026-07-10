@@ -1,5 +1,5 @@
 export const CONFIG = {
-  phoneNumber: "09167118637",
+  phoneNumber: "+234 813 730 4937",
   whatsappCleanNumber: "2348137304937",
   email: "thev3fixer@gmail.com",
   socials: {

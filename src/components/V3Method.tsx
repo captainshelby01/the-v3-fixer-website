@@ -4,8 +4,8 @@ import { Type, Mic, Eye, CheckCircle, ArrowRight } from "lucide-react";
 
 const PILLARS_DATA = [
   {
-    title: "Verbal Communication",
-    subtitle: "The Substance: What You Say",
+    title: "V1 - Verbal Communication",
+    subtitle: "What you say and how clearly you express ideas.",
     shortDesc: "The cognitive architecture of speech. Master the formulas to structure your ideas, eliminate verbal clutter, and captivate with logical precision.",
     icon: <Type className="w-5 h-5" />,
     highlights: [
@@ -16,8 +16,8 @@ const PILLARS_DATA = [
     ]
   },
   {
-    title: "Vocal Communication",
-    subtitle: "The Instrument: How You Say It",
+    title: "V2 - Vocal Communication",
+    subtitle: "Tone, pace, pauses, and vocal confidence.",
     shortDesc: "The physical acoustics of speech. Build vocal endurance, control your breathing, project your voice, and use tonality to project unshakeable authority.",
     icon: <Mic className="w-5 h-5" />,
     highlights: [
@@ -28,8 +28,8 @@ const PILLARS_DATA = [
     ]
   },
   {
-    title: "Visual Communication",
-    subtitle: "The Presence: How You Show Up",
+    title: "V3 - Visual Communication",
+    subtitle: "Body language, posture, and professional presence.",
     shortDesc: "The silent signals of speech. Harness non-verbal intelligence, establish credibility with body posture, and style your executive personal image.",
     icon: <Eye className="w-5 h-5" />,
     highlights: [
@@ -75,7 +75,7 @@ export default function V3Method() {
             The V3 Method of Communication
           </h2>
           <p className="text-sm sm:text-base text-nude-700 font-sans font-light max-w-2xl mx-auto leading-relaxed">
-            True communications mastery is an integrated ecosystem. We decode human expression into three fundamental pillars to construct your ultimate executive persona.
+            The V3 Method which consists of verbal, vocal and visual communication is a tripartite formula created by Winfrey Agbelese to simplify otherwise complicated communication concepts into a simple and easily digestible format. With this formula, her vision is to help professionals strengthen their verbal, vocal, and visual communication so they can communicate ideas clearly, speak with confidence, and develop a strong professional presence.
           </p>
         </div>
 

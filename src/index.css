@@ -2,17 +2,17 @@
 @import "tailwindcss";
 
 @theme {
-  --color-forest-50: #f4f7f5;
-  --color-forest-100: #e2ebe6;
-  --color-forest-200: #c6d9cd;
-  --color-forest-300: #9fc0ab;
-  --color-forest-400: #49a572;
-  --color-forest-500: #2f8758;
-  --color-forest-600: #256b46;
-  --color-forest-700: #1c5235;
-  --color-forest-800: #153c27;
-  --color-forest-900: #0f2b1c;
-  --color-forest-950: #0a1b12;
+  --color-forest-50: #f4f6f0;
+  --color-forest-100: #e7ebd9;
+  --color-forest-200: #d1d8be;
+  --color-forest-300: #b4c09d;
+  --color-forest-400: #93a479;
+  --color-forest-500: #748759;
+  --color-forest-600: #5c6c44;
+  --color-forest-700: #495435;
+  --color-forest-800: #373f27;
+  --color-forest-900: #262c1b;
+  --color-forest-950: #15190f;
 
   --color-nude-50: #faf7f2;
   --color-nude-100: #f4eee2;
@@ -23,11 +23,11 @@
   --color-nude-600: #987652;
   --color-nude-700: #7b5b3d;
 
-  --color-gold-200: #ebdca8;
-  --color-gold-300: #e0ca82;
-  --color-gold-400: #d4b55e;
-  --color-gold-500: #c59f3e;
-  --color-gold-600: #a3812d;
+  --color-gold-200: #e3ebd7;
+  --color-gold-300: #c9d8b7;
+  --color-gold-400: #afc498;
+  --color-gold-500: #93a677;
+  --color-gold-600: #748c58;
 
   --font-sans: "Inter", system-ui, -apple-system, sans-serif;
   --font-serif: "Playfair Display", Georgia, serif;

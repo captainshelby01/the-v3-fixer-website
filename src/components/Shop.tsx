@@ -68,7 +68,7 @@ export default function Shop() {
             The V3 Devotional Trilogy & Bookstore
           </h2>
           <p className="text-sm sm:text-base text-nude-700 font-sans font-light max-w-2xl mx-auto leading-relaxed">
-            Begin your speaking transformation. Secure your digital pre-order of Winfrey’s 31-day guides for Verbal, Vocal, and Visual communication mastery at special release pricing.
+            Begin your speaking transformation. Secure your digital pre-order of Winfrey’s 30-day guides for Verbal, Vocal, and Visual communication mastery at special release pricing.
           </p>
         </div>
 
@@ -99,9 +99,9 @@ export default function Shop() {
 
             // Determine cover colors based on the pillar
             let coverBgClass = "bg-forest-900 text-nude-50 border-forest-950";
-            if (book.pillar === "Verbal") coverBgClass = "bg-emerald-900 text-nude-50 border-emerald-950";
-            if (book.pillar === "Vocal") coverBgClass = "bg-orange-950 text-nude-50 border-orange-900";
-            if (isBundle) coverBgClass = "bg-gradient-to-br from-forest-900 via-forest-950 to-forest-900 text-nude-50 border-gold-600";
+            if (book.pillar === "Verbal") coverBgClass = "bg-forest-600 text-nude-50 border-forest-750";
+            if (book.pillar === "Vocal") coverBgClass = "bg-forest-800 text-nude-50 border-forest-850";
+            if (isBundle) coverBgClass = "bg-gradient-to-br from-forest-700 via-forest-900 to-forest-800 text-nude-50 border-forest-600";
 
             return (
               <motion.div
@@ -241,32 +241,32 @@ export default function Shop() {
         </div>
 
         {/* V3 Learning Community Banner */}
-        <div className="max-w-5xl mx-auto mt-16 bg-gradient-to-br from-forest-900 via-forest-950 to-forest-900 rounded-[2.5rem] p-8 sm:p-12 border border-gold-600/30 text-nude-50 relative overflow-hidden shadow-xl text-left">
+        <div className="max-w-5xl mx-auto mt-16 bg-white rounded-[2.5rem] p-8 sm:p-12 border border-nude-200 text-forest-950 relative overflow-hidden shadow-xl text-left">
           {/* Decorative ambient elements */}
-          <div className="absolute top-0 right-0 w-96 h-96 bg-gold-400/10 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute top-0 right-0 w-96 h-96 bg-forest-900/5 rounded-full blur-3xl pointer-events-none" />
           
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
             <div className="lg:col-span-8 space-y-4">
-              <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-gold-300 bg-white/10 px-3 py-1 rounded-full inline-block">
+              <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-forest-600 bg-nude-100 px-3 py-1 rounded-full inline-block">
                 Exclusive Learning Circle
               </span>
-              <h3 className="font-serif text-2xl sm:text-3xl font-extrabold text-white leading-tight">
+              <h3 className="font-serif text-2xl sm:text-3xl font-extrabold text-forest-950 leading-tight">
                 Join The V3 Learning Community
               </h3>
-              <p className="text-nude-200 text-sm font-sans font-light leading-relaxed max-w-2xl">
+              <p className="text-nude-700 text-sm font-sans font-light leading-relaxed max-w-2xl">
                 Ready to go beyond the books? Join an elite circle of executives, professionals, and entrepreneurs committed to continuous communication supremacy. Get weekly speaking audits, custom frameworks templates, monthly mastermind reviews, and peer-to-peer feedback.
               </p>
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-2 text-xs text-nude-300 font-sans">
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-2 text-xs text-nude-600 font-sans">
                 <div className="flex items-center space-x-2">
-                  <Check className="w-4 h-4 text-gold-300" />
+                  <Check className="w-4 h-4 text-forest-500" />
                   <span>Weekly Audio Tips</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Check className="w-4 h-4 text-gold-300" />
+                  <Check className="w-4 h-4 text-forest-500" />
                   <span>Peer Masterminds</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <Check className="w-4 h-4 text-gold-300" />
+                  <Check className="w-4 h-4 text-forest-500" />
                   <span>Monthly Live Audits</span>
                 </div>
               </div>
@@ -276,9 +276,9 @@ export default function Shop() {
                 href={`https://wa.me/${CONFIG.whatsappCleanNumber}?text=${encodeURIComponent("Hi Winfrey! I would like to join the V3 Learning Community. Please share details on how to register.")}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto inline-flex items-center justify-center space-x-2.5 bg-gold-500 hover:bg-gold-400 text-forest-950 px-8 py-4 rounded-xl text-xs font-bold uppercase tracking-wider transition-all duration-300 shadow-md hover:-translate-y-0.5"
+                className="w-full sm:w-auto inline-flex items-center justify-center space-x-2.5 bg-forest-900 hover:bg-forest-800 text-nude-50 px-8 py-4 rounded-xl text-xs font-bold uppercase tracking-wider transition-all duration-300 shadow-md hover:-translate-y-0.5"
               >
-                <MessageSquare className="w-4 h-4 text-forest-950" />
+                <MessageSquare className="w-4 h-4 text-gold-300" />
                 <span>Join waitlist via WhatsApp</span>
               </a>
             </div>
@@ -357,7 +357,7 @@ export default function Shop() {
                     href={selectedBookForPaystack.paystackLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full inline-flex items-center justify-center space-x-2 bg-emerald-600 hover:bg-emerald-500 text-nude-50 py-3.5 rounded-xl text-xs font-bold uppercase tracking-wider shadow-md transition-colors"
+                    className="w-full inline-flex items-center justify-center space-x-2 bg-forest-900 hover:bg-forest-800 text-nude-50 py-3.5 rounded-xl text-xs font-bold uppercase tracking-wider shadow-md transition-colors"
                   >
                     <CreditCard className="w-4 h-4 text-gold-300" />
                     <span>Continue to Paystack Checkout</span>
@@ -451,7 +451,7 @@ export default function Shop() {
                 <div className="pt-6 border-t border-nude-200 flex flex-col sm:flex-row items-center justify-between gap-4">
                   <div className="text-left">
                     <h5 className="text-xs font-bold text-forest-900">Enjoyed this daily preview?</h5>
-                    <p className="text-[11px] text-nude-500">Pre-order the full 31-day devotional to complete your transformation.</p>
+                    <p className="text-[11px] text-nude-500">Pre-order the full 30-day devotional to complete your transformation.</p>
                   </div>
                   <button
                     onClick={() => {

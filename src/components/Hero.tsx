@@ -111,7 +111,7 @@ export default function Hero() {
                 </span>
               </div>
               <div className="text-center lg:text-left">
-                <span className="block text-2xl font-serif font-extrabold text-forest-900">31 Days</span>
+                <span className="block text-2xl font-serif font-extrabold text-forest-900">30 Days</span>
                 <span className="text-[10px] font-mono tracking-wider text-nude-500 uppercase font-semibold">
                   Per Pillar Manual
                 </span>

@@ -253,7 +253,7 @@ I would like to book a speech assessment and consult on how to fix my V3 communi
                     <span className="block text-xs font-mono font-bold uppercase tracking-wider text-nude-400">Verbal (Logic)</span>
                     <span className="block text-4xl font-serif font-extrabold text-forest-900">{finalScores.verbal}%</span>
                     <div className="h-1.5 bg-nude-100 rounded-full overflow-hidden">
-                      <div className="h-full bg-emerald-600 rounded-full" style={{ width: `${finalScores.verbal}%` }} />
+                      <div className="h-full bg-forest-400 rounded-full" style={{ width: `${finalScores.verbal}%` }} />
                     </div>
                   </div>
 
@@ -261,7 +261,7 @@ I would like to book a speech assessment and consult on how to fix my V3 communi
                     <span className="block text-xs font-mono font-bold uppercase tracking-wider text-nude-400">Vocal (Power)</span>
                     <span className="block text-4xl font-serif font-extrabold text-forest-900">{finalScores.vocal}%</span>
                     <div className="h-1.5 bg-nude-100 rounded-full overflow-hidden">
-                      <div className="h-full bg-orange-600 rounded-full" style={{ width: `${finalScores.vocal}%` }} />
+                      <div className="h-full bg-forest-500 rounded-full" style={{ width: `${finalScores.vocal}%` }} />
                     </div>
                   </div>
 
@@ -269,7 +269,7 @@ I would like to book a speech assessment and consult on how to fix my V3 communi
                     <span className="block text-xs font-mono font-bold uppercase tracking-wider text-nude-400">Visual (Poise)</span>
                     <span className="block text-4xl font-serif font-extrabold text-forest-900">{finalScores.visual}%</span>
                     <div className="h-1.5 bg-nude-100 rounded-full overflow-hidden">
-                      <div className="h-full bg-gold-500 rounded-full" style={{ width: `${finalScores.visual}%` }} />
+                      <div className="h-full bg-forest-600 rounded-full" style={{ width: `${finalScores.visual}%` }} />
                     </div>
                   </div>
                 </div>
@@ -295,7 +295,7 @@ I would like to book a speech assessment and consult on how to fix my V3 communi
                 <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4 max-w-xl mx-auto">
                   <button
                     onClick={handleWhatsAppResults}
-                    className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-emerald-600 hover:bg-emerald-500 text-nude-50 px-6 py-4 rounded-xl text-xs font-bold uppercase tracking-wider shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer"
+                    className="w-full sm:w-auto inline-flex items-center justify-center space-x-2 bg-forest-900 hover:bg-forest-800 text-nude-50 px-6 py-4 rounded-xl text-xs font-bold uppercase tracking-wider shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 cursor-pointer"
                   >
                     <MessageSquare className="w-4 h-4 text-gold-300" />
                     <span>Send Scorecard to Winfrey</span>
