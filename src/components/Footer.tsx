@@ -150,7 +150,7 @@ export default function Footer() {
                   onClick={() => handleScrollToSection("books")}
                   className="hover:text-forest-900 transition-colors focus:outline-none cursor-pointer"
                 >
-                  Trilogy Bookstore Catalog
+                  V3 Devotional Bookstore
                 </button>
               </li>
               <li>

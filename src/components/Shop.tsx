@@ -65,7 +65,7 @@ export default function Shop() {
             Pre-Order Exclusive Store
           </span>
           <h2 className="font-serif text-3xl sm:text-4xl font-extrabold text-forest-950 leading-tight">
-            The V3 Devotional Trilogy & Bookstore
+            The V3 Communication Devotional Bundle & Bookstore
           </h2>
           <p className="text-sm sm:text-base text-nude-700 font-sans font-light max-w-2xl mx-auto leading-relaxed">
             Begin your speaking transformation. Secure your digital pre-order of Winfrey’s 30-day guides for Verbal, Vocal, and Visual communication mastery at special release pricing.

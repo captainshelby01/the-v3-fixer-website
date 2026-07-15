@@ -162,7 +162,7 @@ export const BOOKS: Book[] = [
   },
   {
     id: "v3-bundle",
-    title: "The Ultimate V3 Trilogy Bundle",
+    title: "The V3 Communication Devotional",
     subtitle: "The Complete Verbal, Vocal, and Visual System",
     description: "Get all three volumes of the V3 Devotional Series at an exclusive pre-order discount rate. Your 90-day comprehensive path to absolute communication supremacy.",
     highlights: [
@@ -175,7 +175,7 @@ export const BOOKS: Book[] = [
     normalPrice: 25000,
     paystackLink: "https://paystack.shop/pay/thev3fixer",
     pillar: "Bundle",
-    whatsappMessage: "Hi Winfrey! I would love to pre-order 'The Ultimate V3 Trilogy Bundle'. Please share the details for payment."
+    whatsappMessage: "Hi Winfrey! I would love to pre-order 'The V3 Communication Devotional'. Please share the details for payment."
   }
 ];
 
@@ -202,7 +202,7 @@ export const FAQS: FAQ[] = [
   },
   {
     question: "Who is Winfrey Agbelese (The V3 Fixer)?",
-    answer: "Winfrey Agbelese is a premium communications architect, public speaking expert, and corporate facilitator. Popularly known as 'The V3 Fixer', she helps corporate executives, public figures, and industry leaders align their presentation styles with their professional ambitions.",
+    answer: "Winfrey Agbelese is a premium communications specialist, public speaking expert, and corporate facilitator. Popularly known as 'The V3 Fixer', she helps corporate executives, public figures, and industry leaders align their presentation styles with their professional ambitions.",
     category: "General"
   }
 ];

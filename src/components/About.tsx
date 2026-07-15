@@ -61,7 +61,7 @@ export default function About() {
           <div className="lg:col-span-7 space-y-8 text-left">
             <div className="space-y-3">
               <span className="text-[11px] font-mono tracking-widest bg-forest-900/10 text-forest-900 px-3 py-1 rounded-md font-bold uppercase inline-block">
-                Meet the Communications Architect
+                Meet The V3 Fixer
               </span>
               <h2 className="font-serif text-3xl sm:text-4xl font-extrabold text-forest-950 leading-tight">
                 Hi, I am Winfrey Agbelese <br />

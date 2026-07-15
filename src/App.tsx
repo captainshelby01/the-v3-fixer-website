@@ -88,7 +88,7 @@ export default function App() {
           {/* V3 Ecosystem & Flagship Projects */}
           <Ecosystem />
 
-          {/* Pre-order Trilogy bookstore */}
+          {/* Pre-order V3 Devotional Bookstore */}
           <Shop />
 
           {/* Portfolio & Action shots */}

@@ -37,7 +37,7 @@ export default function Hero() {
             >
               <Sparkles className="w-3.5 h-3.5 text-gold-600 animate-pulse" />
               <span className="text-[11px] font-mono tracking-wider font-semibold uppercase">
-                The Premium V3 Trilogy Devotional is Live
+                The V3 Communication Devotional Bundle is Live
               </span>
             </motion.div>
 
@@ -142,7 +142,7 @@ export default function Hero() {
                 </div>
                 <div>
                   <span className="block text-[10px] font-mono uppercase tracking-widest text-gold-300 font-bold">
-                    Communications Architect
+                    The V3 Fixer
                   </span>
                   <h4 className="font-serif text-sm font-bold">Winfrey Agbelese</h4>
                 </div>
