@@ -342,12 +342,12 @@ export default function Shop() {
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-3 p-3.5 bg-yellow-50 rounded-2xl border border-yellow-100 text-yellow-800 text-xs text-left">
-                  <Info className="w-5 h-5 text-yellow-600 flex-shrink-0 mt-0.5" />
+                <div className="flex items-start space-x-3 p-3.5 bg-forest-50 rounded-2xl border border-forest-100 text-forest-800 text-xs text-left">
+                  <Info className="w-5 h-5 text-forest-600 flex-shrink-0 mt-0.5" />
                   <div className="space-y-1 font-sans">
-                    <span className="font-bold">Author Paystack Link Integration</span>
-                    <p className="text-yellow-700 leading-relaxed font-light">
-                      Winfrey is currently finalizing her merchant dashboard setup on Paystack. This button will direct clients directly to her real Paystack page as soon as her merchant dashboard goes live!
+                    <span className="font-bold">Secure Paystack Checkout</span>
+                    <p className="text-forest-700 leading-relaxed font-light">
+                      Click the button below to purchase your copy securely through the official Paystack storefront.
                     </p>
                   </div>
                 </div>
@@ -371,10 +371,6 @@ export default function Shop() {
                     <span>Reserve on WhatsApp Instead</span>
                   </button>
                 </div>
-
-                <p className="text-center text-[10px] text-nude-400 font-sans">
-                  To modify this transaction routing, edit her Paystack link within <code className="bg-nude-100 px-1 py-0.5 rounded">src/config.ts</code>.
-                </p>
               </div>
             </motion.div>
           </div>

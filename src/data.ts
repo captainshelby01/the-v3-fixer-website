@@ -122,7 +122,7 @@ export const BOOKS: Book[] = [
     ],
     preorderPrice: 8000,
     normalPrice: 10000,
-    paystackLink: "https://paystack.com/pay/v3-verbal",
+    paystackLink: "https://paystack.shop/pay/thev3fixer",
     pillar: "Verbal",
     whatsappMessage: "Hi Winfrey! I would love to pre-order 'The V3 Devotional: Verbal Communication'. Please share the details for payment."
   },
@@ -139,7 +139,7 @@ export const BOOKS: Book[] = [
     ],
     preorderPrice: 8000,
     normalPrice: 10000,
-    paystackLink: "https://paystack.com/pay/v3-vocal",
+    paystackLink: "https://paystack.shop/pay/thev3fixer",
     pillar: "Vocal",
     whatsappMessage: "Hi Winfrey! I would love to pre-order 'The V3 Devotional: Vocal Communication'. Please share the details for payment."
   },
@@ -156,7 +156,7 @@ export const BOOKS: Book[] = [
     ],
     preorderPrice: 8000,
     normalPrice: 10000,
-    paystackLink: "https://paystack.com/pay/v3-visual",
+    paystackLink: "https://paystack.shop/pay/thev3fixer",
     pillar: "Visual",
     whatsappMessage: "Hi Winfrey! I would love to pre-order 'The V3 Devotional: Visual Communication'. Please share the details for payment."
   },
@@ -173,7 +173,7 @@ export const BOOKS: Book[] = [
     ],
     preorderPrice: 20000,
     normalPrice: 25000,
-    paystackLink: "https://paystack.com/pay/v3-trilogy-bundle",
+    paystackLink: "https://paystack.shop/pay/thev3fixer",
     pillar: "Bundle",
     whatsappMessage: "Hi Winfrey! I would love to pre-order 'The Ultimate V3 Trilogy Bundle'. Please share the details for payment."
   }
